@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AI-powered resume builder for veterans. Translate military performance bullets and awards into job-winning civilian resumes. Built by veterans, for veterans." />
+  <meta name="keywords" content="veteran resume, NCOER, military to civilian, AI resume builder, veteran job help, resume translation, military awards" />
+  <meta name="author" content="Vet Resume Optimizer" />
+  <meta property="og:title" content="Vet Resume Optimizer" />
+  <meta property="og:description" content="Translate your military experience into a job-winning resume. Built by veterans, powered by AI." />
+  <meta property="og:image" content="https://yourdomain.com/og-image.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com" />
+  <title>Vet Resume Optimizer</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --light-bg: #ffffff;
+      --light-text: #1e293b;
+      --dark-bg: #0f172a;
+      --dark-text: #e2e8f0;
+      --accent: #0ea5e9;
+      --font-main: 'Inter', sans-serif;
+    }
+    html {
+      font-size: 16px;
+    }
+    body {
+      margin: 0;
+      font-family: var(--font-main);
+      background-color: var(--light-bg);
+      color: var(--light-text);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .dark-mode {
+      background-color: var(--dark-bg);
+      color: var(--dark-text);
+    }
+    header, main, footer {
+      max-width: 960px;
+      margin: auto;
+      padding: 3rem 1rem;
+    }
+    h1, h2, h3 {
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+    h1 {
+      font-size: 2.75rem;
+      font-weight: 700;
+    }
+    h2 {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    p {
+      font-size: 1.125rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+    .steps {
+      margin-top: 3rem;
+      display: grid;
+      gap: 2rem;
+    }
+    .step {
+      background: rgba(14, 165, 233, 0.05);
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem;
+      border-radius: 6px;
+    }
+    button, a.button {
+      background-color: var(--accent);
+      color: white;
+      border: none;
+      padding: 0.85rem 1.5rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      border-radius: 8px;
+      display: inline-block;
+      transition: background 0.2s ease;
+    }
+    a.button:hover, button:hover {
+      background-color: #0284c7;
+    }
+    .toggle-theme {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: none;
+      border: 2px solid var(--accent);
+      color: var(--accent);
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+    .hero {
+      text-align: center;
+      padding-top: 2rem;
+    }
+    .highlight {
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .testimonial {
+      background-color: #f1f5f9;
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem;
+      margin: 3rem 0;
+      border-radius: 6px;
+    }
+    .dark-mode .testimonial {
+      background-color: #1e293b;
+    }
+    .badge-strip {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.95rem;
+      color: #64748b;
+    }
+    .badge-strip i {
+      margin-right: 0.5rem;
+      color: var(--accent);
+    }
+    form {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    input[type="email"] {
+      padding: 0.75rem;
+      font-size: 1rem;
+      width: 100%;
+      max-width: 400px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      border-top: 1px solid #e5e7eb;
+      padding-top: 2rem;
+      margin-top: 4rem;
+    }
+  </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+  <button class="toggle-theme" aria-label="Toggle dark mode" onclick="toggleTheme()">Toggle Theme</button>
+
+  <header class="hero">
+    <h1><span class="highlight">Veteran experience</span>, professionally translated.</h1>
+    <p>We help you say it in a way that lands the job. Built by veterans, powered by AI, and designed to deliver real results.</p>
+    <form name="waitlist" method="POST" data-netlify="true">
+      <input type="email" name="email" placeholder="Enter your email to join the waitlist" required />
+      <button type="submit">Join the Waitlist</button>
+    </form>
+  </header>
+
+  <main>
+    <section class="steps" aria-labelledby="how-it-works">
+      <h2 id="how-it-works">How It Works</h2>
+
+      <div class="step">
+        <h3><span aria-hidden="true">📝</span> Step 1 – Paste Your Bullets</h3>
+        <p>Drop in your evals, award writeups, or just describe what you did. No jargon needed.</p>
+      </div>
+
+      <div class="step">
+        <h3><span aria-hidden="true">🤖</span> Step 2 – We Translate It</h3>
+        <p>Our system rephrases your experience into impactful, civilian-friendly resume bullets.</p>
+      </div>
+
+      <div class="step">
+        <h3><span aria-hidden="true">📄</span> Step 3 – Get a Clean Resume</h3>
+        <p>Use the output as-is, or drop it into one of our clean, ATS-friendly templates ready for applications.</p>
+      </div>
+    </section>
+
+    <section class="testimonial" aria-labelledby="testimonials">
+      <h2 id="testimonials">What Veterans Are Saying</h2>
+      <p>“I spent hours trying to reword my NCOERs and still got ghosted. This tool gave me a resume that actually got callbacks — in under 10 minutes.”</p>
+      <p><strong>– SFC James R., U.S. Army (Ret.)</strong></p>
+    </section>
+
+    <div class="badge-strip">
+      <i class="fas fa-check-circle"></i> Trusted by transitioning veterans<br>
+      <i class="fas fa-lock"></i> Secure. No personal data stored<br>
+      <i class="fas fa-rocket"></i> Fast turnaround. Real results
+    </div>
+
+    <section aria-labelledby="cta">
+      <h2 id="cta">You Served. Now It’s Our Turn to Help.</h2>
+      <p>We’ve been there. We built this tool to make your next step smoother. No fluff, no gimmicks — just results.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Vet Resume Optimizer. Built with ❤️ by veterans for veterans.</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
