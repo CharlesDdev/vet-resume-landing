@@ -12,18 +12,13 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://yourdomain.com" />
   <title>Vet Resume Optimizer</title>
-  <!-- Primary Favicon -->
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-
-<!-- Optional: Add this for high-res favicon support -->
-<link rel="icon" type="image/png" sizes="512x512" href="favicon-512.png">
-
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="512x512" href="favicon-512.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="//cdn-images.mailchimp.com/embeddablecode/classic-061523.css" rel="stylesheet" type="text/css">
-
   <style>
     :root {
       --light-bg: #ffffff;
@@ -33,9 +28,7 @@
       --accent: #0ea5e9;
       --font-main: 'Inter', sans-serif;
     }
-    html {
-      font-size: 16px;
-    }
+    html { font-size: 16px; }
     body {
       margin: 0;
       font-family: var(--font-main);
@@ -56,18 +49,9 @@
       color: var(--accent);
       margin-bottom: 0.5rem;
     }
-    h1 {
-      font-size: 2.75rem;
-      font-weight: 700;
-    }
-    h2 {
-      font-size: 2rem;
-      font-weight: 600;
-    }
-    h3 {
-      font-size: 1.5rem;
-      font-weight: 600;
-    }
+    h1 { font-size: 2.75rem; font-weight: 700; }
+    h2 { font-size: 2rem; font-weight: 600; }
+    h3 { font-size: 1.5rem; font-weight: 600; }
     p {
       font-size: 1.125rem;
       line-height: 1.6;
@@ -112,18 +96,13 @@
       cursor: pointer;
       font-size: 0.9rem;
     }
-
-   .hero {
-  text-align: center;
-  padding: 4rem 1.5rem 3rem;
-  max-width: 720px;
-  margin: 0 auto;
-   }
-
-    .highlight {
-      color: var(--accent);
-      font-weight: 600;
+    .hero {
+      text-align: center;
+      padding: 4rem 1.5rem 3rem;
+      max-width: 720px;
+      margin: 0 auto;
     }
+    .highlight { color: var(--accent); font-weight: 600; }
     .testimonial {
       background-color: #f1f5f9;
       border-left: 4px solid var(--accent);
@@ -131,31 +110,65 @@
       margin: 3rem 0;
       border-radius: 6px;
     }
-    .dark-mode .testimonial {
-      background-color: #1e293b;
-    }
+    .dark-mode .testimonial { background-color: #1e293b; }
     .badge-strip {
       text-align: center;
       margin-top: 3rem;
       font-size: 0.95rem;
       color: #64748b;
     }
-    .badge-strip i {
-      margin-right: 0.5rem;
-      color: var(--accent);
-    }
-    
+    .badge-strip i { margin-right: 0.5rem; color: var(--accent); }
 
+    /* === Mailchimp Form UX Polish === */
     .mailchimp-form {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-top: 2rem;
+      margin-bottom: 3rem;
     }
     .mailchimp-form form {
       width: 100%;
       max-width: 500px;
     }
+    #mc_embed_signup {
+      font-family: var(--font-main);
+      color: inherit;
+      background-color: transparent;
+    }
+    #mc_embed_signup input[type="email"] {
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      width: 100%;
+    }
+    #mc_embed_signup input.button {
+      background-color: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      margin-top: 1rem;
+    }
+    #mc_embed_signup input.button:hover {
+      background-color: #0284c7;
+    }
+    .dark-mode #mc_embed_signup {
+      background-color: transparent;
+      color: var(--dark-text);
+    }
+    .dark-mode #mc_embed_signup input.button {
+      background-color: var(--accent);
+    }
+    .dark-mode #mc_embed_signup input.button:hover {
+      background-color: #0284c7;
+    }
+
     footer {
       text-align: center;
       font-size: 0.9rem;
@@ -164,7 +177,6 @@
       margin-top: 4rem;
     }
   </style>
-
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DQ48WTEXJG"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -173,94 +185,74 @@
     gtag('config', 'G-DQ48WTEXJG');
   </script>
 </head>
-
 <body>
   <button class="toggle-theme" aria-label="Toggle dark mode" onclick="toggleTheme()">Toggle Theme</button>
-
   <header class="hero">
     <h1><span class="highlight">Veteran experience</span>, professionally translated.</h1>
     <p>We help you say it in a way that lands the job. Built by veterans, powered by AI, and designed to deliver real results.</p>
-    
     <div class="mailchimp-form">
-  <h2>Join the Waitlist</h2>
-  <p>Be the first to get access when we launch.</p>
-
-  <div id="mc_embed_shell">
-      <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
-  <style type="text/css">
-        #mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
-        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-<div id="mc_embed_signup">
-    <form action="https://gmail.us3.list-manage.com/subscribe/post?u=3f6047fc065998a988ac330ed&amp;id=5aad2834ca&amp;f_id=006a33e2f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-        <div id="mc_embed_signup_scroll"><h2>Subscribe</h2>
+      <h2>Join the Waitlist</h2>
+      <p>Be the first to get access when we launch.</p>
+      <div id="mc_embed_signup">
+        <form action="https://gmail.us3.list-manage.com/subscribe/post?u=3f6047fc065998a988ac330ed&amp;id=5aad2834ca&amp;f_id=006a33e2f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+          <div id="mc_embed_signup_scroll">
             <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-            <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div>
-        <div id="mce-responses" class="clear foot">
-            <div class="response" id="mce-error-response" style="display: none;"></div>
-            <div class="response" id="mce-success-response" style="display: none;"></div>
-        </div>
-    <div aria-hidden="true" style="position: absolute; left: -5000px;">
-        /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
-        <input type="text" name="b_3f6047fc065998a988ac330ed_5aad2834ca" tabindex="-1" value="">
-    </div>
-        <div class="optionalParent">
-            <div class="clear foot">
-                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
-                <p style="margin: 0px auto;"><a href="http://eepurl.com/jaCwXk" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
+            <div class="mc-field-group">
+              <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+              <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required value="">
             </div>
-        </div>
+            <div id="mce-responses" class="clear foot">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>
+            <div aria-hidden="true" style="position:absolute; left:-5000px;">
+              <input type="text" name="b_3f6047fc065998a988ac330ed_5aad2834ca" tabindex="-1" value="">
+            </div>
+            <div class="optionalParent">
+              <div class="clear foot">
+                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+                <p style="margin: 0px auto;"><a href="http://eepurl.com/jaCwXk" title="Mailchimp - email marketing made easy and fun"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px;"></a></p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
-</form>
-</div>
-<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';fnames[6]='COMPANY';ftypes[6]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
-
-
   </header>
-
   <main>
     <section class="steps" aria-labelledby="how-it-works">
       <h2 id="how-it-works">How It Works</h2>
-
       <div class="step">
         <h3><span aria-hidden="true">📝</span> Step 1 – Paste Your Bullets or Narrative</h3>
         <p>Drop in your evals, award writeups, or just describe what you did. No jargon needed.</p>
       </div>
-
       <div class="step">
         <h3><span aria-hidden="true">🤖</span> Step 2 – We Translate It</h3>
         <p>Our system rephrases your experience into impactful, civilian-friendly resume bullets.</p>
       </div>
-
       <div class="step">
         <h3><span aria-hidden="true">📄</span> Step 3 – Get a Clean Resume</h3>
         <p>Use the output as-is, or drop it into one of our clean, ATS-friendly templates ready for applications.</p>
       </div>
     </section>
-
     <section class="testimonial" aria-labelledby="testimonials">
       <h2 id="testimonials">What Veterans Are Saying</h2>
       <p>“I spent hours trying to reword my NCOERs and still got ghosted. This tool gave me a resume that actually got callbacks — in under 10 minutes.”</p>
       <p><strong>– SFC James R., U.S. Army (Ret.)</strong></p>
     </section>
-
     <div class="badge-strip">
       <i class="fas fa-check-circle"></i> Trusted by transitioning veterans<br>
       <i class="fas fa-lock"></i> Secure. No personal data stored<br>
       <i class="fas fa-rocket"></i> Fast turnaround. Real results
     </div>
-
     <section aria-labelledby="cta">
       <h2 id="cta">You Served. Now It’s Our Turn to Help.</h2>
       <p>We’ve been there. We built this tool to make your next step smoother. No fluff, no gimmicks — just results.</p>
     </section>
   </main>
-
   <footer>
     <p>&copy; 2025 Vet Resume Optimizer. Built with ❤️ by veterans for veterans.</p>
   </footer>
-
   <script>
     function toggleTheme() {
       document.body.classList.toggle('dark-mode');
